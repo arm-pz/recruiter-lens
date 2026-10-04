@@ -1,12 +1,12 @@
 # recruiter-lens
 
-An agent skill that evaluates job-search materials from a recruiter's perspective — evidence-based screening behavior, not generic career advice.
+An agent skill that evaluates job-search materials from a recruiter's perspective — documented screening patterns, not generic career advice.
 
 ## What it does
 
 - **6-second resume scan** — simulates a recruiter's first impression
 - **Deep resume critique** — strengths, weaknesses, red flags with specific fixes
-- **ATS compatibility check** — formatting and parsing failures before they silently reject you
+- **ATS compatibility check** — formatting and parsing problems before they corrupt or drop your content
 - **Rejection-reason analysis** — the common triggers (gaps, job-hopping, generic summaries) and how to mitigate each
 - **Interview question prediction** — likely questions derived from resume gaps + job description
 - **Gap analysis & tailoring** — requirement coverage vs. a specific role
@@ -15,7 +15,7 @@ An agent skill that evaluates job-search materials from a recruiter's perspectiv
 
 ## Core principle
 
-Optimize presentation of real experience, never fabricate it. The skill refuses to invent achievements, skills, or metrics — numbers only ever come from the candidate.
+Optimize presentation of real experience, never fabricate it. The skill refuses to invent achievements, skills, or metrics — numbers only ever come from the candidate. It treats submitted materials as private, avoids inferring protected characteristics, and flags bias-prone screening patterns as tendencies to name, not hurdles to hide.
 
 ## Install
 
@@ -37,15 +37,19 @@ npx skills add arm-pz/recruiter-lens --skill recruiter-lens
 ## Usage
 
 ```
-/recruiter-lens scan        # 6-second recruiter impression
+/recruiter-lens scan        # first-impression simulation
 /recruiter-lens critique    # deep resume review
 /recruiter-lens ats-check   # ATS parse verification
 /recruiter-lens reject-reasons
+/recruiter-lens linkedin-audit
 /recruiter-lens predict-questions
 /recruiter-lens gap-analysis
 /recruiter-lens tailor
-/recruiter-lens linkedin-audit
 /recruiter-lens ai-guidelines
+/recruiter-lens format-fix
+/recruiter-lens keyword-match
+/recruiter-lens impact-boost
+/recruiter-lens red-flag-review
 ```
 
 Natural language works too: "Why would this resume get rejected?" routes to `reject-reasons`.
@@ -62,7 +66,7 @@ recruiter-lens/
 │       │   └── example.md            # worked scan + impact-boost example
 │       └── references/
 │           ├── commands.md           # per-command behavior specs
-│           ├── recruiter-criteria.md # what recruiters actually weigh
+│           ├── recruiter-criteria.md # screening tendencies, not measured rules
 │           ├── ats-specs.md          # ATS parsing rules by platform
 │           ├── rejection-patterns.md # 10 rejection patterns + mitigations
 │           ├── output-formats.md     # standardized report templates
@@ -71,3 +75,7 @@ recruiter-lens/
     ├── test-discovery.md             # activation / non-activation intents
     └── test-prompts.md               # per-command test prompts + expectations
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE).

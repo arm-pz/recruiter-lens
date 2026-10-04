@@ -1,5 +1,7 @@
 # ATS (Applicant Tracking System) Technical Specifications
 
+> **As of:** October 2026. Platform parsing behavior changes with vendor updates — re-verify against current vendor docs or a fresh parse test before relying on specific claims below.
+
 ## How ATS Systems Work
 
 ATS platforms parse resumes into structured database fields before any human sees them. Understanding this process is critical for resume optimization.

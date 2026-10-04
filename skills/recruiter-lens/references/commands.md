@@ -102,6 +102,8 @@ Identify factors that commonly cause automatic or quick rejections:
 
 ### `linkedin-audit` - LinkedIn Profile Optimization
 
+**Input rule:** This command needs actual profile content (pasted text or a screenshot). If the user provides only a resume, request the profile text or a screenshot; if unavailable, explicitly downgrade to a resume-derived audit and label every finding as inferred, not observed.
+
 Evaluate LinkedIn profile for recruiter discoverability and appeal:
 
 **Key areas:**
