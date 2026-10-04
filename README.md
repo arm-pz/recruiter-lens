@@ -19,10 +19,20 @@ Optimize presentation of real experience, never fabricate it. The skill refuses 
 
 ## Install
 
-Place the `recruiter-lens/` folder in your skills directory:
+Copy the `skills/recruiter-lens/` directory into the skills directory supported by your AI agent:
 
-- Qoder CLI: `~/.qoder/skills/recruiter-lens/`
-- Or any agent that reads `SKILL.md`
+```text
+.claude/skills/recruiter-lens/
+.agents/skills/recruiter-lens/
+.cursor/skills/recruiter-lens/
+.qoder/skills/recruiter-lens/
+```
+
+Or install via the Skills CLI:
+
+```bash
+npx skills add arm-pz/recruiter-lens --skill recruiter-lens
+```
 
 ## Usage
 
@@ -44,12 +54,20 @@ Natural language works too: "Why would this resume get rejected?" routes to `rej
 
 ```
 recruiter-lens/
-├── SKILL.md                      # command routing, workflow, safety rules
-└── references/
-    ├── commands.md               # per-command behavior specs
-    ├── recruiter-criteria.md     # what recruiters actually weigh
-    ├── ats-specs.md              # ATS parsing rules by platform
-    ├── rejection-patterns.md     # 10 rejection patterns + mitigations
-    ├── output-formats.md         # standardized report templates
-    └── quality-checklist.md      # pre-submission checklists
+├── README.md
+├── skills/
+│   └── recruiter-lens/
+│       ├── SKILL.md                  # command routing, workflow, safety rules
+│       ├── examples/
+│       │   └── example.md            # worked scan + impact-boost example
+│       └── references/
+│           ├── commands.md           # per-command behavior specs
+│           ├── recruiter-criteria.md # what recruiters actually weigh
+│           ├── ats-specs.md          # ATS parsing rules by platform
+│           ├── rejection-patterns.md # 10 rejection patterns + mitigations
+│           ├── output-formats.md     # standardized report templates
+│           └── quality-checklist.md  # pre-submission checklists
+└── tests/
+    ├── test-discovery.md             # activation / non-activation intents
+    └── test-prompts.md               # per-command test prompts + expectations
 ```
