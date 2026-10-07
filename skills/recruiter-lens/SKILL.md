@@ -11,10 +11,11 @@ description: >-
   Never invents achievements or metrics. Not for general prose editing (use
   wordsmith if installed) and not for producing the final .docx or .pdf file (use
   the file skills).
+version: 1.0.0
 argument-hint: "[command] [target]"
 user-invocable: true
 metadata:
-  version: "0.2.0"
+  version: "1.0.0"
 ---
 
 # Recruiter Lens
