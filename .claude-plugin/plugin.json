@@ -1,0 +1,10 @@
+{
+  "name": "recruiter-lens",
+  "version": "1.0.0",
+  "description": "Reviews resumes, CVs and LinkedIn profiles the way recruiters screen them: first-impression scans, ATS compatibility, rejection-pattern diagnosis and interview prep. Never invents a metric.",
+  "author": {
+    "name": "Abdul Rahman P Z"
+  },
+  "homepage": "https://skills.caffeinity.com/recruiter-lens/",
+  "repository": "https://github.com/arm-pz/recruiter-lens"
+}
