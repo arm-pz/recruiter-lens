@@ -4,16 +4,17 @@ description: >-
   Review resumes, CVs, cover letters and LinkedIn profiles the way recruiters
   commonly screen them, and prepare candidates for interviews. Use when the user
   shares or asks about job-search materials: why a resume is not getting
-  interviews or keeps being rejected, a quick first-impression scan, ATS
-  compatibility or keyword fit against a job description, tailoring coverage
-  against a role, gap analysis, strengthening weak bullet points, predicting
-  interview questions, or auditing a LinkedIn profile. Also covers using AI
-  honestly in a job search. Never invents achievements or metrics. Not for
+  interviews, a quick first-impression scan, ATS compatibility or keyword fit
+  against a job description, tailoring coverage against a role, gap analysis,
+  weak bullet points, predicting interview questions, or auditing a LinkedIn
+  profile. Also covers using AI honestly in a job search. Never invents
+  achievements or metrics. Not for
   producing finished application material (a rewritten resume, new summaries, a
   full LinkedIn rewrite, interview answer scripts): use the applicant-kit skill, which
-  takes this skill's findings as input. Not for general prose editing (use
-  wordsmith if installed) and not for producing the final .docx or .pdf file (use
-  the file skills).
+  takes this skill's findings as input. Not for running the search itself
+  (finding roles, the application tracker, follow-ups, interview briefings): use
+  the application-pilot skill. Not for prose editing (wordsmith, if installed)
+  or producing the final .docx or .pdf (the file skills).
 version: 1.0.0
 argument-hint: "[command] [target]"
 user-invocable: true

@@ -19,7 +19,8 @@ The skill should activate for requests containing these intents:
 
 The skill should NOT activate for:
 
-- Finding, evaluating, or submitting job applications (use job-application-agent instead)
+- Finding, shortlisting, or tracking job applications, and follow-up or interview-briefing coordination (use application-pilot instead)
+- Automated form filling and batch submission (use job-application-agent instead)
 - Writing or editing non-job-search content (use wordsmith instead)
 - Resume layout/design as a graphic artifact (use a design skill)
 - Negotiating offers or compensation legal advice
@@ -40,6 +41,8 @@ Ambiguous prompts, with expected routing:
 | "Improve my resume." (no JD) | `critique` first, then offer applicant-kit for the rewrite |
 | "Tailor my resume to this JD." | `tailor` for coverage; applicant-kit mode 1 writes the tailored resume |
 | "What will they ask me?" | `predict-questions`; offer applicant-kit for the answers |
+| "Which roles should I apply to?" | application-pilot mode 3 scores the shortlist; `gap-analysis` answers per-role coverage only when asked |
+| "Brief me for Thursday's interview." | application-pilot mode 7 assembles it, calling `predict-questions` for the list |
 
 The skill must never output precise metrics the candidate did not provide;
 it must use candidate figures, explicitly framed approximations, or bracketed prompts.
