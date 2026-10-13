@@ -5,10 +5,13 @@ description: >-
   commonly screen them, and prepare candidates for interviews. Use when the user
   shares or asks about job-search materials: why a resume is not getting
   interviews or keeps being rejected, a quick first-impression scan, ATS
-  compatibility or keyword fit against a job description, tailoring to a role,
-  gap analysis, strengthening weak bullet points, predicting interview questions,
-  or auditing a LinkedIn profile. Also covers using AI honestly in a job search.
-  Never invents achievements or metrics. Not for general prose editing (use
+  compatibility or keyword fit against a job description, tailoring coverage
+  against a role, gap analysis, strengthening weak bullet points, predicting
+  interview questions, or auditing a LinkedIn profile. Also covers using AI
+  honestly in a job search. Never invents achievements or metrics. Not for
+  producing finished application material (a rewritten resume, new summaries, a
+  full LinkedIn rewrite, interview answer scripts): use the job-lens skill, which
+  takes this skill's findings as input. Not for general prose editing (use
   wordsmith if installed) and not for producing the final .docx or .pdf file (use
   the file skills).
 version: 1.0.0
@@ -58,7 +61,7 @@ Per-command behavior is specified in `references/commands.md`. Read the entry fo
 
 - `predict-questions` - likely interview questions from resume gaps and the job description
 - `gap-analysis` - requirement-by-requirement coverage against a job description
-- `tailor` - adjust the material to a specific job description, using only real experience
+- `tailor` - report coverage against a specific job description and recommend repositioning, using only real experience
 - `ai-guidelines` - rules for authentic AI use in applications
 
 ### Optimization commands
@@ -77,6 +80,10 @@ Per-command behavior is specified in `references/commands.md`. Read the entry fo
 - `optimize` → `tailor`; `improve` → `critique`
 - `fix-format` or `ats-fix` → `format-fix`
 - `ai-rules` or `authentic-use` → `ai-guidelines`
+
+## Companion skill: job-lens
+
+recruiter-lens judges; job-lens produces. When the user asks for a verdict (scan, critique, ats-check, reject-reasons, gap-analysis, tailor coverage, predict-questions, linkedin-audit, ai-guidelines), answer here. When the user asks for the better version written (a rewritten resume for a role, new bullets, new summaries, a LinkedIn rewrite, interview answer scripts), hand off to job-lens if it is installed and pass along the findings so far. If job-lens is not installed, do the requested rewriting yourself under the same never-invent rule, and mention job-lens once as an option, not on every reply.
 
 ## The five filters
 

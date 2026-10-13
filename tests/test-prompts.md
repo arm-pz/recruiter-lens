@@ -116,3 +116,15 @@ as stated facts (see the metrics rule in `references/commands.md`).
 **Expected:** Scan for common disqualifiers (unexplained gaps, job
 hopping, vague claims, contradictions between sections) with the
 explanation or fix for each.
+
+## critique then production (job-lens hand-off)
+
+**Input:** "Critique my resume, then fix it." + resume with some bullets
+lacking metrics
+
+**Expected:** `critique` output first; then a hand-off to job-lens if
+installed (or a rewrite under the never-invent rule if not), with open
+metric slots marked for the user to fill.
+
+**Fail:** invented numbers in the rewrite; the critique repeated inside
+the rewrite.

@@ -61,6 +61,8 @@ All metrics in these examples (percentages, times, counts) are illustrative form
 3. Restructure skills section with categories
 4. Include 1-2 leadership/mentoring examples
 5. Standardize date formatting throughout
+
+**Optional closing offer** (only when the job-lens skill is installed or the user asks what to do next): "Want these fixes written into the resume? job-lens can do that."
 ```
 
 ---
@@ -390,6 +392,37 @@ Based on your resume and the [Job Title] role at [Company], here are likely ques
 ---
 
 ## Tailoring Output
+
+Default template for `tailor` — coverage judgment only; the job-lens skill writes finished material:
+
+```markdown
+## Tailoring Coverage for [Specific Role]
+
+**Target:** Senior Backend Engineer at Caffeinity
+
+### Coverage
+| JD requirement | Status | Supporting line in the material |
+|---|---|---|
+| Python/Django | Full | "Designed and deployed 3 microservices … Django REST Framework" |
+| AWS | Partial | "AWS Lambda" appears once; deployment ownership not shown |
+| NoSQL | Missing | no Mongo/DynamoDB experience visible |
+
+### Priority Themes
+- Which themes the JD stresses most, and whether the material covers them
+
+### Repositioning Suggestions
+- What to move where (e.g. promote the trading-systems bullet to first in the most recent role) and why
+
+### Honest Keyword Placements
+- Keyword → the true sentence or section it belongs in; nothing the experience cannot support
+
+### Remaining Concerns
+- Gaps that cannot be closed by rewording
+
+Finished-tailored-document work (rewritten summary, new bullets, cover letter) goes to the job-lens skill, mode 1, when it is installed.
+```
+
+**Full-rewrite format** — use only when job-lens is not installed and the user asks for the rewrite itself. Same never-invent rule: all figures must come from the candidate, the numbers below are illustrative format only.
 
 ```markdown
 ## Application Tailoring for [Specific Role]

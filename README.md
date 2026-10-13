@@ -34,6 +34,13 @@ Or install via the Skills CLI:
 npx skills add arm-pz/recruiter-lens --skill recruiter-lens
 ```
 
+Or as a Claude Code plugin from the caffeinity-skills marketplace:
+
+```
+/plugin marketplace add arm-pz/caffeinity-skills
+/plugin install recruiter-lens@caffeinity-skills
+```
+
 ## Usage
 
 ```
@@ -53,6 +60,14 @@ npx skills add arm-pz/recruiter-lens --skill recruiter-lens
 ```
 
 Natural language works too: "Why would this resume get rejected?" routes to `reject-reasons`.
+
+## Pairs with job-lens
+
+This skill judges; the sibling [job-lens](https://github.com/arm-pz/job-lens) skill produces — it takes these findings as input and writes the finished material (tailored resume, new bullets, summaries, LinkedIn rewrite, interview answer pack). Typical flow: `/recruiter-lens critique` → hand to `/job-lens` → back to `ats-check` before you send.
+
+`tailor` here reports requirement coverage and repositioning suggestions against a specific JD; full document rewriting belongs to job-lens (and stays honest either way — numbers only ever come from the candidate).
+
+> Naming note: unrelated to `dani-aisystems/recruiter-lens`, which is a separate GitHub-auditing MCP server that happens to share the name. This repo is the skill by arm-pz.
 
 ## Structure
 

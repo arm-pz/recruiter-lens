@@ -176,31 +176,32 @@ Compare candidate qualifications against job requirements:
 
 ---
 
-### `tailor` - Application Tailoring for Specific JD
+### `tailor` - Tailoring Coverage for a Specific JD
 
-Optimize resume or cover letter for a specific job description:
+Report how well the current material covers one specific job description and where real experience could legitimately move. This command judges coverage; the job-lens skill writes the finished tailored material. If job-lens is not installed, recommend concrete placements but keep them as recommendations, not a full rewritten document.
 
 **Tailoring process:**
 1. Extract key terminology from JD (tools, methodologies, competencies)
 2. Identify priority themes (what the JD emphasizes most)
-3. Map candidate's existing experience to JD language
-4. Reposition bullet points to highlight relevant work
-5. Adjust summary/objective to mirror JD positioning
-6. Ensure keyword density without stuffing
+3. Map coverage: each JD requirement against the candidate's real experience as Full / Partial / Missing
+4. Identify repositioning opportunities (which bullets or sections should surface relevant work earlier)
+5. Note honest keyword placements (existing true sentences, never stuffed lists)
 
 **Rules:**
 - NEVER invent experience or skills not present
 - DO use JD terminology to describe existing work
-- DO reorder sections to surface relevant experience
-- DO adjust emphasis within bullet points (move relevant info earlier)
+- DO suggest section reordering to surface relevant experience
 - DON'T claim proficiency levels beyond actual capability
+- DON'T add keywords the experience cannot support; report them as gaps
 
 **Output format:**
-- Revised summary/objective
-- Rewritten bullet points (showing before/after)
-- Suggested section reordering
-- Keywords added naturally
+- Coverage table (JD requirement → Full/Partial/Missing → supporting line in the material)
+- Priority themes and which are uncovered
+- Repositioning suggestions (what to move where, and why)
+- Honest keyword placements
 - Remaining concerns (if any)
+
+To produce the finished tailored document, hand off to the job-lens skill (mode 1) when it is installed.
 
 ---
 
