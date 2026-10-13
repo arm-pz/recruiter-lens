@@ -1,6 +1,17 @@
 # recruiter-lens
 
-An agent skill that evaluates job-search materials from a recruiter's perspective — documented screening patterns, not generic career advice.
+A resume and LinkedIn review agent skill for Claude Code, Cursor, Codex and Qoder. It checks your resume, CV or LinkedIn profile the way a recruiter actually screens it: a 6-second scan, an ATS compatibility check, the common rejection triggers, gap analysis against a job description, and the interview questions your resume invites. It never invents a metric.
+
+Install: `npx skills add arm-pz/recruiter-lens --skill recruiter-lens`
+
+Ask it things like:
+
+- "Why would this resume get rejected?"
+- "Will this pass an ATS?"
+- "Give me a 6-second recruiter scan."
+- "What will they ask me about the gaps in this resume?"
+
+This is an agent skill, not an MCP server, and is unrelated to [dani-aisystems/recruiter-lens](https://github.com/dani-aisystems/recruiter-lens), an MCP server for auditing GitHub profiles that happens to share the name. To have your materials rewritten rather than reviewed, pair it with [job-lens](https://github.com/arm-pz/job-lens).
 
 ## What it does
 
@@ -66,8 +77,6 @@ Natural language works too: "Why would this resume get rejected?" routes to `rej
 This skill judges; the sibling [job-lens](https://github.com/arm-pz/job-lens) skill produces — it takes these findings as input and writes the finished material (tailored resume, new bullets, summaries, LinkedIn rewrite, interview answer pack). Typical flow: `/recruiter-lens critique` → hand to `/job-lens` → back to `ats-check` before you send.
 
 `tailor` here reports requirement coverage and repositioning suggestions against a specific JD; full document rewriting belongs to job-lens (and stays honest either way — numbers only ever come from the candidate).
-
-> Naming note: unrelated to `dani-aisystems/recruiter-lens`, which is a separate GitHub-auditing MCP server that happens to share the name. This repo is the skill by arm-pz.
 
 ## Structure
 
