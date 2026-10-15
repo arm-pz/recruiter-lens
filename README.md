@@ -11,7 +11,7 @@ Ask it things like:
 - "Give me a 6-second recruiter scan."
 - "What will they ask me about the gaps in this resume?"
 
-This is an agent skill, not an MCP server, and is unrelated to [dani-aisystems/recruiter-lens](https://github.com/dani-aisystems/recruiter-lens), an MCP server for auditing GitHub profiles that happens to share the name. To have your materials rewritten rather than reviewed, pair it with [job-lens](https://github.com/arm-pz/job-lens).
+This is an agent skill, not an MCP server, and is unrelated to [dani-aisystems/recruiter-lens](https://github.com/dani-aisystems/recruiter-lens), an MCP server for auditing GitHub profiles that happens to share the name. To have your materials rewritten rather than reviewed, pair it with [applicant-kit](https://github.com/arm-pz/applicant-kit).
 
 ## What it does
 
@@ -72,11 +72,11 @@ Or as a Claude Code plugin from the caffeinity-skills marketplace:
 
 Natural language works too: "Why would this resume get rejected?" routes to `reject-reasons`.
 
-## Pairs with job-lens
+## Pairs with applicant-kit
 
-This skill judges; the sibling [job-lens](https://github.com/arm-pz/job-lens) skill produces — it takes these findings as input and writes the finished material (tailored resume, new bullets, summaries, LinkedIn rewrite, interview answer pack). Typical flow: `/recruiter-lens critique` → hand to `/job-lens` → back to `ats-check` before you send.
+This skill judges; the sibling [applicant-kit](https://github.com/arm-pz/applicant-kit) skill produces — it takes these findings as input and writes the finished material (tailored resume, new bullets, summaries, LinkedIn rewrite, interview answer pack). Typical flow: `/recruiter-lens critique` → hand to `/applicant-kit` → back to `ats-check` before you send.
 
-`tailor` here reports requirement coverage and repositioning suggestions against a specific JD; full document rewriting belongs to job-lens (and stays honest either way — numbers only ever come from the candidate).
+`tailor` here reports requirement coverage and repositioning suggestions against a specific JD; full document rewriting belongs to applicant-kit (and stays honest either way — numbers only ever come from the candidate).
 
 ## Structure
 

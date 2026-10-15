@@ -9,7 +9,7 @@ The skill should activate for requests containing these intents:
 - Check my resume against Applicant Tracking Systems.
 - What interview questions will they ask based on my resume?
 - Find the gaps between my resume and this job description.
-- Tailor my resume for this specific posting. (expects the coverage judgment from `tailor`; the finished rewrite hands off to job-lens when installed)
+- Tailor my resume for this specific posting. (expects the coverage judgment from `tailor`; the finished rewrite hands off to applicant-kit when installed)
 - Audit my LinkedIn profile for recruiters.
 - How should I explain my employment gap?
 - Is this a red flag on my resume?
@@ -25,7 +25,7 @@ The skill should NOT activate for:
 - Negotiating offers or compensation legal advice
 - Company research unrelated to a specific application
 
-Non-activation prompts that should route to job-lens (they ask for finished material):
+Non-activation prompts that should route to applicant-kit (they ask for finished material):
 
 - "Rewrite my resume bullets for this role."
 - "Write five summary options for this job."
@@ -37,9 +37,9 @@ Ambiguous prompts, with expected routing:
 
 | Prompt | Expected routing |
 |---|---|
-| "Improve my resume." (no JD) | `critique` first, then offer job-lens for the rewrite |
-| "Tailor my resume to this JD." | `tailor` for coverage; job-lens mode 1 writes the tailored resume |
-| "What will they ask me?" | `predict-questions`; offer job-lens for the answers |
+| "Improve my resume." (no JD) | `critique` first, then offer applicant-kit for the rewrite |
+| "Tailor my resume to this JD." | `tailor` for coverage; applicant-kit mode 1 writes the tailored resume |
+| "What will they ask me?" | `predict-questions`; offer applicant-kit for the answers |
 
 The skill must never output precise metrics the candidate did not provide;
 it must use candidate figures, explicitly framed approximations, or bracketed prompts.

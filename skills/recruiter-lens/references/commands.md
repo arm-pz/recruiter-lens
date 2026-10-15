@@ -178,7 +178,7 @@ Compare candidate qualifications against job requirements:
 
 ### `tailor` - Tailoring Coverage for a Specific JD
 
-Report how well the current material covers one specific job description and where real experience could legitimately move. This command judges coverage; the job-lens skill writes the finished tailored material. If job-lens is not installed, recommend concrete placements but keep them as recommendations, not a full rewritten document.
+Report how well the current material covers one specific job description and where real experience could legitimately move. This command judges coverage; the applicant-kit skill writes the finished tailored material. If applicant-kit is not installed, recommend concrete placements but keep them as recommendations, not a full rewritten document.
 
 **Tailoring process:**
 1. Extract key terminology from JD (tools, methodologies, competencies)
@@ -201,7 +201,7 @@ Report how well the current material covers one specific job description and whe
 - Honest keyword placements
 - Remaining concerns (if any)
 
-To produce the finished tailored document, hand off to the job-lens skill (mode 1) when it is installed.
+To produce the finished tailored document, hand off to the applicant-kit skill (mode 1) when it is installed.
 
 ---
 

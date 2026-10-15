@@ -10,7 +10,7 @@ description: >-
   interview questions, or auditing a LinkedIn profile. Also covers using AI
   honestly in a job search. Never invents achievements or metrics. Not for
   producing finished application material (a rewritten resume, new summaries, a
-  full LinkedIn rewrite, interview answer scripts): use the job-lens skill, which
+  full LinkedIn rewrite, interview answer scripts): use the applicant-kit skill, which
   takes this skill's findings as input. Not for general prose editing (use
   wordsmith if installed) and not for producing the final .docx or .pdf file (use
   the file skills).
@@ -81,9 +81,9 @@ Per-command behavior is specified in `references/commands.md`. Read the entry fo
 - `fix-format` or `ats-fix` → `format-fix`
 - `ai-rules` or `authentic-use` → `ai-guidelines`
 
-## Companion skill: job-lens
+## Companion skill: applicant-kit
 
-recruiter-lens judges; job-lens produces. When the user asks for a verdict (scan, critique, ats-check, reject-reasons, gap-analysis, tailor coverage, predict-questions, linkedin-audit, ai-guidelines), answer here. When the user asks for the better version written (a rewritten resume for a role, new bullets, new summaries, a LinkedIn rewrite, interview answer scripts), hand off to job-lens if it is installed and pass along the findings so far. If job-lens is not installed, do the requested rewriting yourself under the same never-invent rule, and mention job-lens once as an option, not on every reply.
+recruiter-lens judges; applicant-kit produces. When the user asks for a verdict (scan, critique, ats-check, reject-reasons, gap-analysis, tailor coverage, predict-questions, linkedin-audit, ai-guidelines), answer here. When the user asks for the better version written (a rewritten resume for a role, new bullets, new summaries, a LinkedIn rewrite, interview answer scripts), hand off to applicant-kit if it is installed and pass along the findings so far. If applicant-kit is not installed, do the requested rewriting yourself under the same never-invent rule, and mention applicant-kit once as an option, not on every reply.
 
 ## The five filters
 
