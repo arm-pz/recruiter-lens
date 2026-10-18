@@ -1,10 +1,14 @@
 {
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "recruiter-lens",
   "version": "1.0.0",
   "description": "Reviews resumes, CVs and LinkedIn profiles the way recruiters screen them: first-impression scans, ATS compatibility, rejection-pattern diagnosis and interview prep. Never invents a metric.",
   "author": {
-    "name": "Abdul Rahman P Z"
+    "name": "Abdul Rahman P Z",
+    "url": "https://github.com/arm-pz"
   },
   "homepage": "https://skills.caffeinity.com/recruiter-lens/",
-  "repository": "https://github.com/arm-pz/recruiter-lens"
+  "repository": "https://github.com/arm-pz/recruiter-lens",
+  "keywords": ["resume", "job-search", "ats", "linkedin", "interview-prep"],
+  "skills": "./skills/"
 }
